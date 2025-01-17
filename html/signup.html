@@ -3,9 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Glamour</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="../css/login.css">
 </head>
 <body>
-    
+    <header>
+        <h1>Glamour</h1>
+    </header>
+    <section>
+        <div class="content">
+            <div class="form">
+                <h2>Get Started Now</h2>
+                <form>
+                    <div class="input">
+                        <label>User Name</label>
+                        <input 
+                            type="text" 
+                            name="text" 
+                            id="user"
+                            required>
+                    </div>
+                    <br>
+                    <div class="input">
+                        <label>Number Phone</label>
+                        <input 
+                            type="text" 
+                            name="number" 
+                            id="phone"
+                            required>
+                    </div>
+                    <br>
+                    <div class="input">
+                        <label>Email addres</label>
+                        <input 
+                            type="email" 
+                            name="email" 
+                            id="email"
+                            required>
+                    </div>
+                    <br>
+                    <div class="input">
+                        <label>Password</label>
+                        <input 
+                            type="password" 
+                            id="password" 
+                            name="password"
+                            required 
+                            minlength="8"
+                            maxlength="50">
+                    </div>
+                    <input type="submit" value="Sign Up">
+                    <div class="social-link">
+                        <p>OR</p>
+                        <div class="contact">
+                            <a href="#"> <img src="../images/icons8-google 1.png" width="24px" height="24px" alt=""> Login with Google</a>
+                            <a href="#"> <img src="../images/facebook.png" width="24px" height="24px" alt="">Login with Facebook</a>    
+                        </div>
+                       <div class="signup">
+                            <p>Have an account?  <a href="login.html" target="_blank">Login</a></p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="logo">
+            <img src="../images/logo.png" alt="logo">
+        </div>
+    </section>
 </body>
 </html>
