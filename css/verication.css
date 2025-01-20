@@ -1,0 +1,73 @@
+section .content .form p {
+    line-height: 24px;
+    font-size: 18px;
+    color: #0C6170;
+    font-family:Roboto;
+}
+.form h2{
+    font-size: 20px;
+    color: #0C6170;
+    font-family:Roboto;
+    font-weight:500;
+}
+.form{
+    text-align: center;
+}
+section form input[type="submit"] {
+    width: 45%;
+    padding: 12px;
+    background-color: #0C6170;
+    color: #EFF9F7;
+    border: none;
+    border-radius: 10px;
+    font-size:16px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+section form input[type="reset"] {
+    width: 45%;
+    padding: 11px;
+    background-color: #EFF9F7;
+    color: #0C6170;
+    border: 1px solid #0C6170;
+    border-radius: 10px;
+    outline-color: #0C6170;
+    font-size:16px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+form input{
+    display: inline;
+}
+section .content {
+    justify-content: center;
+    align-items: center;
+}
+section form .otp{
+   width: 50px;
+   height: 40px;
+   font-size: 20px;
+   border: 1px solid #0C6170;
+   border-radius: 10px;
+   text-align: center;
+   background-color: #EFF9F7;
+   margin: 5px ;
+   padding: 10px;
+   color: #0C6170;
+   outline: #0C6170;
+   margin-bottom: 20px;
+   margin-top: 0;
+}
+section .content .otpNext{
+    background-color:#363535 ;
+    color: #EFF9F7;
+}
+.resend {
+    margin-top: 25px;
+}
+.resend a{
+    display: inline-block;
+    font-size: 16px;
+    color: #37BEB0;
+    text-decoration: none;
+}
