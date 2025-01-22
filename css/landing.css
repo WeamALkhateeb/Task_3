@@ -5,6 +5,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-color: #EFF9F7;
+}
 /*header style*/
 header{
     background-color: #EFF9F7;
@@ -61,7 +64,7 @@ header .signup{
     background-position: center;
     background-size: cover;
 }
-.main .icon {
+.icon {
     display: inline;
     gap: 20px; 
     margin: 80px 100px 20px 0; 
@@ -104,19 +107,27 @@ header .signup{
     padding-right: 30px ;
     cursor: pointer;
 }
-.trending {
+.trending , .summer , .winter{
     background-color: #EFF9F7;
+    height: 110vh;
 }
 .title1 h3 {
     display: flex;
     align-items: baseline;
-    padding: 30px 80px 10px 0;
+    padding: 30px 80px 10px 40px;
     font-family: "Ysabeau SC";
     color: #0C6170;
     border-bottom: 1px solid #0C6170;
     width: fit-content; 
     margin-left: 30px;
 }
+.summer .title1 h3 {
+    padding: 30px 10px 10px 20%;
+    letter-spacing: 3px;
+    margin-left: auto; /* ضمان محاذاة النص وفقًا للتصميم */
+    margin-right:180px; /
+}
+
 .title1 h3 .big-letter {
     font-weight: 500;
     font-size: 60px;
@@ -124,26 +135,29 @@ header .signup{
 }
 .title1 h3 .small-letters {
     font-weight: 500;
-    font-size: 30px; 
+    font-size: 35px; 
 }
 .title1 h3 .collection {
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 600;
 }
 .title1 p {
-    padding: 30px 0 20px 30px;
+    padding: 30px 0 20px 5%;
     color: #0C6170;
     font-family:"Ysabeau SC";
     font-size: 20px;
     font-weight: 500;
 }
-
+.summer .title1 p {
+    text-align: end;
+    padding: 30px 12% 20px 30px;
+}
 .cards-container {
     display: flex;
-    gap: 10%;
+    gap: 5% ;
     justify-content: center;
-    align-items: center;
     margin: 0;
+    margin-top: 5px;
 }
 
 .card {
@@ -154,60 +168,132 @@ header .signup{
     text-align: left;
 }
 .card img {
+    padding: 10px;
     width: 100%;
-    height: 400px; /* ارتفاع الصورة */
     object-fit: fill;
     border: 1px solid #EFF9F7;
-    border-radius: 8px;
+    border-radius: 10px;
 }
 
 .card h4 {
     font-family: "Ysabeau SC";
-    font-size: 16px;
+    font-size: 20px;
     padding-left: 10px;
     color: #0C6170;
+    font-weight: 600;
 }
-
-.card p {
+.card .price {
+    display: flex;
+}
+.card .price span{
     font-family: "Ysabeau SC";
-    font-size: 16px;
     color: #0C6170;
     margin-top: 20px;
     margin-left: 10px;
+    margin-right: 43%;
 }
 
+.price .icon {
+    padding: 0;
+    width: 24px; 
+    height: 24px; 
+    margin: 0; 
+    margin-top: 20px;
+    text-align: start;
+    color: #0C6170;
+}
 .card1 {
-    width: 20%; 
-    height: 450px; 
+    width: 23%; 
+    height: 500px; 
+    transform: translateY(40px);
 }
-
 .card1 img {
-    height: 350px; 
+    height: 400px; 
 }
 
 .card2 {
-    width: 25%; 
-    height: 520px; 
+    width: 27%; 
+    height: 600px; 
 }
-
 .card2 img {
-    height: 420px; 
+    height: 500px; 
+}
+.card2 .price span{
+    margin-right: 60%;
 }
 
 .card3 {
-    width: 20%; 
-    height:450px; 
-    transform: translateY(-30px);
+    width: 23%; 
+    height:500px; 
+}
+.card3 img {
+    height: 400px; 
 }
 
-.card3 img {
-    height: 350px; 
+.card4 , .card9 , .card11 {
+    width: 15%; 
+    height: 320px; 
+    transform: translateY(270px);
 }
-/* زر الكارت */
+.card4 img , .card9 img , .card11 img{
+    height: 220px; 
+    padding: 5px;
+}
+.card4 .price span, .card9 .price span ,.card11 .price span{
+    margin-right: 30%;
+}
+
+.card5 , .card10 {
+    width: 20%; 
+    height: 450px; 
+}
+.card5 img , .card10 img{
+    height: 350px; 
+    padding: 10px;
+}
+.card5 .price span , .card10 .price span{
+    margin-right: 45%;
+}
+
+.card6 {
+    width: 15%; 
+    height: 320px; 
+    transform: translateY(270px);
+}
+.card6 img {
+    height: 220px; 
+    padding: 5px;
+}
+.card6 .price span{
+    margin-right: 20%;
+}
+
+.card7 , .card8{
+    width: 25%; 
+    height: 520px; 
+}
+.card7 img , .card8 img{
+    height: 420px; 
+    padding: 10px;
+}
+.card7 .price span , .card8 .price span{
+    margin-right: 60%;
+}
+.card7 .btn-card {
+    margin-top: 40px;
+    margin-left: 20px;
+    transform: translateX(90px); 
+}
+.card8 .btn-card{
+    padding: 20px 110px;
+    margin-top: 100px;
+    transform: translateX(1050px);
+}
+/*card button*/
 .btn-card {
     display: inline-block;
-    margin-top: 40px;
-    padding: 10px 80px;
+    margin-top: 20px;
+    padding: 20px 100px;
     text-align: left;
     font-size: 18px;
     font-family: "Ysabeau SC";
@@ -217,10 +303,99 @@ header .signup{
     border: 1px solid #0C6170;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s;
 }
-
 .btn-card:hover {
     background-color: #37BEB0;
-    transform: scale(1.05);
+}
+
+.clients{
+    background-color: #EFF9F7;
+    height: 70vh;
+}
+.clients div{
+    padding: 100px;
+}
+.clients h3{
+    border-top:1px solid #0C6170 ;
+    padding-top: 20px;
+    font-family: "Ysabeau SC";
+    font-weight: 500;
+    font-size:60px;
+    color: #0C6170;
+    text-align: center;
+}
+.clients p{
+    font-family: "Ysabeau SC";
+    font-weight: 500;
+    font-size:24px;
+    color: #0C6170;
+    text-align: center;   
+}
+.clients span {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 40px; 
+}
+.clients img {
+    width: 80px; /* تكبير العرض */
+    height:80px; /* تكبير الارتفاع */
+    transition: transform 0.3s ease; /* إضافة تأثير عند التفاعل */
+}
+
+.clients img:hover {
+    transform: scale(1.2); /* تكبير الصورة عند تمرير الفأرة */
+}
+
+footer{
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-start; 
+    background-color: #EFF9F7; 
+    color: #0C6170; 
+    border-top: 1px solid #0C6170;
+    padding: 20px 0; 
+    gap: 20px;
+    flex-wrap: wrap; 
+    width: 90%; 
+    margin: auto auto;
+}
+.footerGroup{
+    display: flex; 
+    gap: 25px;
+    flex-wrap: wrap; 
+}
+footer h3{
+    font-family: "Ysabeau SC";
+    color: #0C6170;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+footer h4 {
+    font-size: 18px;
+    font-weight: 700; 
+}
+footer ul {
+    list-style: none; 
+    padding: 5px;
+    margin: 0;
+}
+footer li {
+    margin-bottom: 8px;
+    font-size: 14px;
+    cursor: pointer;
+}
+footer a {
+    text-decoration: none;
+    color: #0C6170;
+}
+footer span {
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 15px; 
+    padding-top: 10px;
+}
+footer img {
+    width: 18px; 
+    height: 18px;
 }
