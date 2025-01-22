@@ -124,7 +124,7 @@ header .signup{
 .summer .title1 h3 {
     padding: 30px 10px 10px 20%;
     letter-spacing: 3px;
-    margin-left: auto; /* ضمان محاذاة النص وفقًا للتصميم */
+    margin-left: auto; 
     margin-right:180px; /
 }
 
@@ -338,13 +338,13 @@ header .signup{
     gap: 40px; 
 }
 .clients img {
-    width: 80px; /* تكبير العرض */
-    height:80px; /* تكبير الارتفاع */
-    transition: transform 0.3s ease; /* إضافة تأثير عند التفاعل */
+    width: 80px; 
+    height:80px; 
+    transition: transform 0.3s ease; 
 }
 
 .clients img:hover {
-    transform: scale(1.2); /* تكبير الصورة عند تمرير الفأرة */
+    transform: scale(1.2); 
 }
 
 footer{
